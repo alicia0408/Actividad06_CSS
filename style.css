@@ -1,0 +1,20 @@
+ .row{
+     clear: both;
+ }
+  .first{
+      float: left;
+      width: 50%;
+  }
+
+  .second{
+      float: right;
+      width: 50%;
+  }
+ h2, h3, h4 {
+    color: orangered;
+}
+
+.hobbies {
+    color: white;
+    background-color:  rgb(233, 10, 140);
+}
