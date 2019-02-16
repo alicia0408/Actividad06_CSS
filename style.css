@@ -1,20 +1,293 @@
- .row{
-     clear: both;
- }
-  .first{
-      float: left;
-      width: 50%;
-  }
+ 
 
-  .second{
-      float: right;
-      width: 50%;
-  }
- h2, h3, h4 {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: rgb(195, 195, 195);
+    position: relative;
+}
+
+.maincontainer {
+    position: absolute;
+    top: 10vh;
+    left: 10vw;
+    margin-bottom: 10vh;
+    margin-right: 10vw;   
+    background-color: white;
+}
+
+.fotocurriculum {
+    transform: translate(-50%, -50%);
+    height: 18rem;
+    position: absolute;
+    top: 10rem;
+    border-radius: 50%;
+    border: 1rem solid rgb(195, 195, 195);
+    z-index: 2;
+}
+
+.avatar {
+    text-align: center;
+}
+
+.name{
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    top: 15rem;
+
+}
+
+.linea-horizontal {
+    height: .5rem;
+    position: relative;
+    top: 16rem;
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgb(214, 214, 214);
+}
+
+.titulos {
     color: orangered;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 800;
+    padding: 1.5rem 0;
+}
+
+.columna-izq {
+    width: 48vw;
+    padding: 3rem;
+    margin-top: 15rem;
+    float: left;
+    position: relative;
+}
+
+.col-der {
+    width: 32vw;
+    padding: 3rem;
+    margin-top: 15rem;
+    float: left;
+    position: relative;
+}
+
+.paragraph {
+    font-size: 2rem;
+    margin: 2.5rem 0;
+}
+
+.paragraph-no-margin {
+    font-size: 2rem;
+}
+
+.paragraph-small-margin {
+    font-size: 2rem;
+    margin: 1rem 0;
+    padding-top: 1rem;
+}
+
+.year-ed {
+    padding: 1rem;
+    position: relative;
+    width: 100%;
+    display: table;
+}
+
+.year {
+    width: 12.5%;
+    position: relative;
+    left: 0;
+    top: 1rem;
+    display: table-cell;
+}
+
+.bold-paragraph {
+    font-size: 2rem;
+    font-weight: 800;
+    color: black;
+}
+
+.ed {
+    padding: 2rem 1.5rem;
+    width: 87.5%;
+    background-color: lightgrey;
+    right: 0;
+    top: 0;
+    display: table-cell;
+}
+
+.arrow {
+    height: 0;
+    width: 0;
+    border-right: 1.5rem solid lightgray;
+    border-left: 2rem solid transparent;
+    border-bottom: 2rem solid transparent;
+    border-top: 2rem solid transparent;
+    position: absolute;
+    right: 0;
+    top: 1rem;
+}
+
+.xp-container {
+    width: 100%;
+}
+
+.xp-place {
+    width: 20%;
+    float: left;
+}
+
+.xp-description {
+    width: 80%;
+    float: left;
+    padding-bottom: 2rem;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.contact,
+.skills,
+.hobbies {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.skill {
+    color: white;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: .5rem;
+    display: inline-block;
+    background-color: orangered;
+    margin-bottom: .5rem;
+    position: static;
+}
+
+.py {
+    width: 100%;
+}
+
+.ht {
+    width: 85%;
+}
+
+.cs {
+    width: 75%;
+}
+
+.js {
+    width: 55%;
+}
+
+.ph {
+    width: 30%;
+    display: block;
+}
+
+.idiomas {
+    width: 100%;
+    display: table;
+    position: relative;
+}
+
+.lang {
+    width: 50%;
+    display: table-cell;
+    left: 0;
+}
+
+.rating {
+    width: 50%;
+    right: 0;
+    font-size: 3.3rem;
+    display: table-cell;
+    text-align: right;
+}
+
+.red-stars {
+    color: red;
+}
+
+.grey-stars {
+    color: grey;
 }
 
 .hobbies {
+    width: 100%;
+}
+
+.hobby {
     color: white;
-    background-color:  rgb(233, 10, 140);
+    font-size: 1.5rem; 
+    display: inline-block;
+    background-color: rgb(95, 14, 95);
+    padding: 1rem;
+}
+
+.horizontal {
+    height: 4px;
+    background-color: lightgray;
+    position: absolute;
+    width: 100%;
+}
+
+footer p {
+    color: rgb(119, 119, 119);
+    padding: 1rem;
+    display: inline-block;
+    text-align: right;
+    border-top: 2px solid lightgray;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+    html { font-size: 8px;}
+}
+
+@media (max-width: 800px) {
+    html { font-size: 7px;}
+}
+
+@media (max-width: 700px) {
+    html { font-size: 6px;}
+}
+
+@media (max-width: 600px) {
+    html { font-size: 5px;}
+    .col-der {float: none;
+            width: 100%;
+        padding: 0 18px;}
+    .col-izq {float: none;
+            width: 100%;
+        padding: 0 18px;}
+    .maincontainer {
+        width: auto;
+        margin: 0;
+        padding: 0;
+        left:0;
+    }
+    footer p {
+         position: relative;
+         margin-top: 5px;
+    }
 }
